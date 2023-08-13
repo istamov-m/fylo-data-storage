@@ -1,0 +1,204 @@
+body {
+    background: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 65em;
+}
+
+.file-manipulation {
+    background: hsl(228, 56%, 26%);
+    border-radius: 15px 100px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 40px;
+    width: 18em;
+    height: 7em;
+}
+
+.file-manipulation .logo {
+    width: 135px;
+    height: 40px;
+}
+
+.file-manipulation .file {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160px;
+    height: 40px;
+}
+
+.file-manipulation .file button {
+    background: hsl(229, 57%, 11%);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    height: 160px;
+    background: hsl(228, 56%, 26%);
+    width: 40em;
+}
+
+.storage-ch {
+    width: 36em;
+}
+
+.storage p {
+    font-weight: 400;
+}
+
+.storage .storage-ch .range-bg {
+    background: hsl(229, 57%, 11%);
+    width: 570px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 0;
+    top: 32em;
+}
+
+.storage .storage-ch .range-bg .range {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 20px;
+    height: 20px;
+    width: 400px;
+}
+
+.storage .storage-ch .range-bg .range .range-end {
+    background: white;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.storage .size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.storage .message {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0em;
+    right: 1em;
+}
+
+.storage .message .inf {
+    background: #fff;
+    color: hsl(229, 57%, 11%);
+    display: flex;
+    flex-direction: row;
+    width: 7em;
+    border-radius: 10px 10px 0 10px;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.storage .message .triangle {
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+    margin-left: 145px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-right: 42px solid transparent;
+    border-bottom: 25px solid #fff;
+    transform: rotate(60deg);
+
+}
+
+footer { 
+    margin-top: 80em;
+    font-size: 11px; text-align: center; 
+}
+    
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media  screen and (max-width: 1100px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 12em;
+        height: 24.5em;
+    }
+
+
+    .storage {
+        width: 23em;
+    }
+    
+    .storage-ch {
+        width: 19em;
+    }
+    
+    .storage .storage-ch .range-bg {
+        width: 300px;
+        height: 15px;
+    }
+    
+    .storage .storage-ch .range-bg .range {
+        height: 15px;
+        width: 200px;
+    }  
+
+    .storage .message {
+        top: 22em;
+    }
+
+    .storage .message .inf {
+        border-radius: 10px;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    footer { 
+        margin-top: 50em;
+    }
+
+}
