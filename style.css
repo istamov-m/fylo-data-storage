@@ -129,6 +129,10 @@ main {
     justify-content: space-between;
 }
 
+.storage .message .inf P {
+    text-transform: uppercase;
+}
+
 .storage .message .triangle {
     position: relative;
     bottom: 15px;
