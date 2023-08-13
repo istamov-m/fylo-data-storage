@@ -131,6 +131,7 @@ main {
 
 .storage .message .inf P {
     text-transform: uppercase;
+    font-size: 13px;
 }
 
 .storage .message .triangle {
